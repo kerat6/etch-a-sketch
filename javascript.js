@@ -28,6 +28,7 @@ blocks.forEach((block) => {
         if (block.style.backgroundColor == "white") {
             block.style.backgroundColor = getRandomColor();
             block.style.opacity = 0.1;
+            block.attributes.draggable = false;
         } else if (block.style.opacity !== 1) {
             let currentOpacity = Number(block.style.opacity);
             block.style.opacity = (currentOpacity + 0.1);
@@ -75,6 +76,7 @@ buttons.forEach(button => {
                     if (block.style.backgroundColor == "white") {
                         block.style.backgroundColor = getRandomColor();
                         block.style.opacity = 0.1;
+                        block.attributes.draggable = false;
                     } else if (block.style.opacity !== 1) {
                         let currentOpacity = Number(block.style.opacity);
                         block.style.opacity = (currentOpacity + 0.1);
